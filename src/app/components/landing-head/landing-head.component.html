@@ -1,0 +1,16 @@
+<head class="head-landing">
+  <img class="logo-imegen-head-landing" src="../../../assets/imagen/logo-header_0_0_1.png" alt="logo estrenar vivienda head">
+  <button class="button-logo-head" (click)="seletButtoMenu()">
+    <img class="logo-icon-head-landing" src="../../../assets/imagen/logo-header_0_0_1_icon.png" alt="logo estrenar vivienda head">
+  </button>
+
+  <nav [ngClass]="{'nav-content-head': ejecuteMenuDesple}">
+    <ul class="head-navegacion-ancla">
+      <li><a class="head-nav-a" href="#seccion-inicio" (click)="seletButtoMenu()" [ngClass]="{'head-nav-a-select': modelSelect.inicio}" (click)="selectInicio()">Inicio</a></li>
+      <li><a class="head-nav-a" href="#" (click)="seletButtoMenu()" [ngClass]="{'head-nav-a-select': modelSelect.Carac}" (click)="selectCaract()">Características</a></li>
+      <li><a class="head-nav-a" href="#" (click)="seletButtoMenu()" [ngClass]="{'head-nav-a-select': modelSelect.Plano}" (click)="selectPlano()">Planos</a></li>
+      <li><a class="head-nav-a" href="#" (click)="seletButtoMenu()" [ngClass]="{'head-nav-a-select': modelSelect.Ubic}" (click)="selectUbic()">Ubicación</a></li>
+      <li><a class="head-nav-a" href="#" (click)="seletButtoMenu()" [ngClass]="{'head-nav-a-select': modelSelect.Contacto}" (click)="selectContac()">Contacto</a></li>
+    </ul>
+  </nav>
+</head>

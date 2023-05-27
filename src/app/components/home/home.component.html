@@ -1,1 +1,31 @@
-<p>home works!</p>
+<app-landing-head></app-landing-head>
+<section id="seccion-inicio">
+  <section class="contect-section-inicio">
+    <h1 class="title-section-inicio">
+      CASA EN VENTA  EN JAMUNDÍ <strong class="title-section-inicio2">VIOLETAS DEL CASTILLO</strong>
+    </h1>
+    <p class="parrafo-section-inicio">
+      El proyecto incluye Amplias zonas verdes, juego para mascotas y baño para mascotas.
+    </p>
+
+    <div class="slider-conten">
+      <ng-container *ngIf="selectSlider; else sliderVideo">
+        <ng-image-slider #nav  [images]="imageObject"  [imageSize]="{width:wid+'px',height:hei+'px'}"></ng-image-slider>
+      </ng-container>
+      <ng-template #sliderVideo>
+        <ng-image-slider #nav  [images]="videoObjeto" [videoAutoPlay]="true" [imageSize]="{width:wid+'px',height:hei+'px'}"></ng-image-slider>
+      </ng-template>
+    </div>
+
+    <div class="content-button-slider">
+      <button class="button-slider" [ngClass]="{'button-slider-select':selectSlider}" (click)="selectImagen()">Imagenes</button>
+      <button class="button-slider" [ngClass]="{'button-slider-select':!selectSlider}" (click)="sselectVideo()">Videos</button>
+    </div>
+
+  </section>
+
+</section>
+
+<section class="content-divider">
+  <mat-divider></mat-divider>
+</section>
