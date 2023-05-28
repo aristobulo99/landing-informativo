@@ -18,6 +18,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { BannerDialogComponent } from './banner-dialog/banner-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -41,7 +44,9 @@ import { BannerDialogComponent } from './banner-dialog/banner-dialog.component';
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   exports: [
     HomeComponent

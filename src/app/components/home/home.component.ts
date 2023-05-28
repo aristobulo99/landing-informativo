@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { BannerDialogComponent } from '../banner-dialog/banner-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +9,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 
+  constructor(public dialog: MatDialog){}
+
   ngOnInit(): void {
     this.onWindowResize();
+    this.dialog.open(BannerDialogComponent)
   }
 
   public wid: string = '679';
