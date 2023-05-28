@@ -1,0 +1,43 @@
+.content-section-subtitle{
+  display: flex;
+  width: 737px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sectio-title{
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  color: #CCDC04;
+}
+
+.content-section-map{
+  display: flex;
+  width: 470px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapa{
+  width: 470px;
+  height: 209px;
+}
+
+@media screen and (max-width: 770px) {
+
+  .content-section-subtitle{
+    width: 300px;
+  }
+
+  .content-section-map{
+    width: 300px;
+  }
+
+  .mapa{
+    width: 235px;
+    height: 104.5px;
+  }
+
+}

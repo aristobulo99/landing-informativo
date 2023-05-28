@@ -79,7 +79,11 @@ export class HomeComponent implements OnInit{
       image: '../../../assets/imagen/slider/el-catillo-casa-violetas-vista-habitacion2.jpg',
       thumbImage: '../../../assets/imagen/slider/el-catillo-casa-violetas-vista-habitacion2.jpg',
       alt: 'Image alt'
-
+    },
+    {
+      image: '../../../assets/imagen/slider/el-catillo-casa-violetas-vista-sala.jpg',
+      thumbImage: '../../../assets/imagen/slider/el-catillo-casa-violetas-vista-sala.jpg',
+      alt: 'Image alt'
     }
   ];
 

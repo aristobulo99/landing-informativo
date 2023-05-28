@@ -61,11 +61,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 0px 25px 0px;
 }
 
 mat-divider{
   width: 737.08px;
   background: #A3A4A4;
+}
+
+.caracteristicas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 15px 0px;
+}
+
+.planos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 15px 0px;
+}
+
+.ubicacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 15px 0px;
 }
 
 

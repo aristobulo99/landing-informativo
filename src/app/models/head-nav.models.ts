@@ -5,3 +5,7 @@ export interface headNav{
   Ubic: boolean;
   Contacto: boolean;
 }
+
+export interface descrCaract{
+  description: string
+}

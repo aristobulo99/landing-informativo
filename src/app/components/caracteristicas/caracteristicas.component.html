@@ -1,1 +1,17 @@
-<p>caracteristicas works!</p>
+<section class="content-principal-section-carac">
+  <p class="content-subtitle">Características</p>
+
+
+  <mat-grid-list [cols]="numColum" rowHeight="5:1" style="width: 100%;" >
+    <mat-grid-tile class="conten-item-caract" *ngFor=" let item of cracteObjet">
+      <span class="material-icons">
+        check_circle
+      </span>
+      <p class="descrip-carat">
+        {{item.description}}
+      </p>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</section>

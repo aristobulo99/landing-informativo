@@ -7,19 +7,29 @@ import {MatMenuModule} from '@angular/material/menu';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {MatDividerModule} from '@angular/material/divider';
 import { CaracteristicasComponent } from './caracteristicas/caracteristicas.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+import { PlanosComponent } from './planos/planos.component';
+import { UbicacionComponent } from './ubicacion/ubicacion.component';
+import { FooterLandingComponent } from './footer-landing/footer-landing.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     LandingHeadComponent,
-    CaracteristicasComponent
+    CaracteristicasComponent,
+    PlanosComponent,
+    UbicacionComponent,
+    FooterLandingComponent
   ],
   imports: [
     CommonModule,
     MatMenuModule,
     NgImageSliderModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule,
+    MatIconModule
   ],
   exports: [
     HomeComponent
