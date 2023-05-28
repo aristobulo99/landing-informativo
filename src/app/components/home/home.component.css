@@ -90,6 +90,14 @@ mat-divider{
   margin: 0px 0px 15px 0px;
 }
 
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #CCDC04;
+  margin: 0px 0px 15px 0px;
+}
+
 
 
 @media screen and (max-width: 980px) {

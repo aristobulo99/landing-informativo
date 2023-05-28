@@ -12,6 +12,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { PlanosComponent } from './planos/planos.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { FooterLandingComponent } from './footer-landing/footer-landing.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { BannerDialogComponent } from './banner-dialog/banner-dialog.component';
 
 
 @NgModule({
@@ -21,7 +27,9 @@ import { FooterLandingComponent } from './footer-landing/footer-landing.componen
     CaracteristicasComponent,
     PlanosComponent,
     UbicacionComponent,
-    FooterLandingComponent
+    FooterLandingComponent,
+    SnackBarComponent,
+    BannerDialogComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +37,11 @@ import { FooterLandingComponent } from './footer-landing/footer-landing.componen
     NgImageSliderModule,
     MatDividerModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   exports: [
     HomeComponent

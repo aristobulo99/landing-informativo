@@ -25,7 +25,7 @@ export class PlanosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this. onWindowResize();
   }
 
   imageObject: Array<object> = [

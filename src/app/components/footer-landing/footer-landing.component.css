@@ -1,5 +1,120 @@
 .landing-footer{
   width: auto;
-  height: 372px;
-  background: #CCDC04;
+  display: flex;
+  margin: 30px 0px;
 }
+
+.content-form-contact{
+  width: 300px;
+  height: auto;
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.content-text-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title{
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  color: #CCDC04;
+}
+
+.contact-subtitle{
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #A3A4A4;
+  justify-items: center;
+}
+
+.contetn-contact-input{
+  margin: 15px 0px 0px 0px;
+}
+
+.style-input-contact{
+  height: 30px;
+  padding: 0px 80px 0px 10px;
+  border: 1px solid #CCDC04;
+  border-radius: 5px;
+  color: #A3A4A4;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.style-input-contact:focus{
+  outline: none;
+}
+
+.contact-mat-error{
+  display: flex;
+
+}
+
+.content-text-mat-error{
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  margin: 3px 0px 0px 10px;
+}
+
+.button-contact{
+  background: #CCDC04;
+  border: #CCDC04;
+  border-radius: 5px;
+  margin: 25px 0px;
+  height: 30px;
+  padding: 0px 81px;
+  color: #FFFF;
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.button-contact-invalid{
+  background: #cedc045f;
+  border: #cedc045f;
+}
+
+@media screen and (max-width: 330px) {
+
+  .content-form-contact{
+    width: 210px;
+  }
+
+  .contact-subtitle{
+    font-size: 10px;
+  }
+
+  .contetn-contact-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .style-input-contact{
+    padding: 0px 0px 0px 10px;
+  }
+
+  .button-contact{
+    padding: 0px 44px;
+  }
+
+}
+
+

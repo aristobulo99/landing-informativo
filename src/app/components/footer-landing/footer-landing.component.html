@@ -1,3 +1,73 @@
 <footer class="landing-footer">
+  <section class="content-form-contact">
+    <div class="content-text-contact">
+      <p class="contact-title">
+        Ingrese tus datos
+      </p>
+      <p class="contact-subtitle">
+        Interesados en adquirir un apartamento
+      </p>
+    </div>
+    <form [formGroup]="formGroup">
+      <div class="contetn-contact-input">
+        <input class="style-input-contact" type="text" placeholder="Nombre" formControlName="nombre">
+        <mat-error class="contact-mat-error" *ngIf="formNombre.hasError('required') && formNombre?.touched">
+          <p class="content-text-mat-error">
+            Campo requerido
+          </p>
+        </mat-error>
+        <mat-error class="contact-mat-error" *ngIf="formNombre.hasError('minlength')">
+          <p class="content-text-mat-error">
+            Nombre muy corto
+          </p>
+        </mat-error>
+      </div>
+
+      <div class="contetn-contact-input">
+        <input class="style-input-contact" type="text" placeholder="Apellido" formControlName="apellido">
+        <mat-error class="contact-mat-error" *ngIf="formApellido.hasError('required') && formApellido?.touched">
+          <p class="content-text-mat-error">
+            Campo requerido
+          </p>
+        </mat-error>
+        <mat-error class="contact-mat-error" *ngIf="formApellido.hasError('minlength')">
+          <p class="content-text-mat-error">
+            Apellido muy corto
+          </p>
+        </mat-error>
+      </div>
+
+      <div class="contetn-contact-input">
+        <input class="style-input-contact" type="number" placeholder="Teléfono" formControlName="telefono">
+        <mat-error class="contact-mat-error" *ngIf="formTelefono.hasError('required') && formTelefono?.touched">
+          <p class="content-text-mat-error">
+            Campo requerido
+          </p>
+        </mat-error>
+      </div>
+
+      <div class="contetn-contact-input">
+        <input class="style-input-contact" type="email" placeholder="Correo Electronico" formControlName="email">
+        <mat-error class="contact-mat-error" *ngIf="formEmail.hasError('required') && formEmail?.touched">
+          <p class="content-text-mat-error">
+            Campo requerido
+          </p>
+        </mat-error>
+
+        <mat-error class="contact-mat-error" *ngIf="formEmail.hasError('email')">
+          <p class="content-text-mat-error">
+            Cuenta no valida
+          </p>
+        </mat-error>
+      </div>
+
+      <button [disabled]="formGroup.invalid"
+              class="button-contact"
+              [ngClass]="{'button-contact-invalid':formGroup.invalid}"
+              (click)="enviarDato()">
+        Enviar datos
+      </button>
+    </form>
+  </section>
 
 </footer>
